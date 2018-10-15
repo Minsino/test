@@ -1266,7 +1266,7 @@
         "func": "let subs = msg.payload.subcodes.map((codes) => {\n    delete msg.payload.subcodes;\n    return {\n        topic:msg.topic,\n        payload: Object.assign({code: codes}, msg.payload)\n    };\n});\nmsg = subs;\nreturn [ msg ];",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 350,
         "y": 200,
         "wires": [
             [
