@@ -1,0 +1,1311 @@
+[
+    {
+        "id": "e5309594.d40e48",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "33052606.1cec9a",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "7ab18f20.143b9",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "489b36ab.2c5e48",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 180,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "245015b6.dabb0a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 560,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "245015b6.dabb0a",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "245015b6.dabb0a",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "245015b6.dabb0a",
+                        "port": 2
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "245015b6.dabb0a",
+                        "port": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "bddd3b61.2f7d88",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "f1b12eab.99ef9",
+        "type": "mongodb3",
+        "z": "",
+        "uri": "mongodb://localhost:27017/mqtt",
+        "name": "",
+        "options": "",
+        "parallelism": "-1"
+    },
+    {
+        "id": "a44e27d4.9b9ad8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Правила",
+        "tab": "9cde3b05.358548",
+        "order": 1,
+        "disp": false,
+        "width": "23",
+        "collapse": false
+    },
+    {
+        "id": "3cec48dd.d53ff8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Добавить устройство",
+        "tab": "9cde3b05.358548",
+        "order": 2,
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "5c5ad785.da16c8",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "pubsub",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "9cde3b05.358548",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Устройства",
+        "icon": "settings_input_antenna",
+        "order": 1
+    },
+    {
+        "id": "5a37901d.b0d71",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#408080",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#408080",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#408080",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#5eaeae",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#408080",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4680f03.bc0981",
+        "type": "mongodb3",
+        "z": "",
+        "uri": "mongodb://localhost:27017/mqtt",
+        "name": "",
+        "options": "",
+        "parallelism": "-1"
+    },
+    {
+        "id": "eff89bef.cae2a8",
+        "type": "mqtt in",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "topic": "spb/+/status",
+        "qos": "0",
+        "broker": "5c5ad785.da16c8",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "9cad40bf.99acc"
+            ]
+        ]
+    },
+    {
+        "id": "c6340f74.b5766",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 210,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "9cad40bf.99acc",
+        "type": "json",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "c6340f74.b5766",
+                "f43ddf32.d3cbd"
+            ]
+        ]
+    },
+    {
+        "id": "d24b4cde.1828c",
+        "type": "mongodb3 in",
+        "z": "e5309594.d40e48",
+        "service": "_ext_",
+        "configNode": "f1b12eab.99ef9",
+        "name": "insert",
+        "collection": "data",
+        "operation": "insertOne",
+        "x": 570,
+        "y": 160,
+        "wires": [
+            [
+                "89c7c29d.44957"
+            ]
+        ]
+    },
+    {
+        "id": "6befd391.02146c",
+        "type": "catch",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "scope": null,
+        "x": 260,
+        "y": 60,
+        "wires": [
+            [
+                "320aa6d1.c4794a"
+            ]
+        ]
+    },
+    {
+        "id": "320aa6d1.c4794a",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 430,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "89c7c29d.44957",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 890,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "b0cd5e59.1025d",
+        "type": "ui_template",
+        "z": "e5309594.d40e48",
+        "group": "a44e27d4.9b9ad8",
+        "name": "",
+        "order": 0,
+        "width": "23",
+        "height": "100",
+        "format": "<style>\nbody.nr-dashboard-theme md-toolbar.device-panel-item {\n  background: #fff;\n  color: #666666;\n}\n\n.device-panel-content-container.ng-enter,\n.device-panel-content-container.ng-leave {\n  -webkit-transition: 0.5s linear all;\n  transition: 0.5s linear all;\n}\n\n.device-panel-content-container.ng-enter,\n.device-panel-content-container.ng-leave.ng-leave-active {\n  opacity: 0;\n  height: 0px;\n}\n\n.device-panel-content-container.ng-leave,\n.device-panel-content-container.ng-enter.ng-enter-active {\n  opacity: 1;\n  height: 96px;\n}\n\n.set-settingg.ng-enter,\n.set-settingg.ng-leave {\n  -webkit-transition: 0.5s linear all;\n  transition: 0.5s linear all;\n}\n\n.set-settingg.ng-enter,\n.set-settingg.ng-leave.ng-leave-active {\n  opacity: 0;\n}\n\n.set-settingg.ng-leave,\n.set-settingg.ng-enter.ng-enter-active {\n  opacity: 1;\n}\n\nmd-content.set-param {\n  background: rgb(255, 255, 255) none repeat scroll 0% 0%;\n  margin-top: -10px;\n  padding-top: 15px;\n  padding-left: 5px;\n  box-shadow: 0 0 3px rgba(0, 0, 0, 0.26);\n  transform-origin: center top 0px;\n  transition: all 0.5s ease 0s;\n  -webkit-transform-origin: center top 0px;\n  -webkit-transition: all 0.5s ease 0s;\n}\n\n.ng-hide {\n  opacity: 0;\n  transform: matrix3d(1, 0, 0.00, 0, 0.00, 0.01, 0.00, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n  -webkit-transform: matrix3d(1, 0, 0.00, 0, 0.00, 0.01, 0.00, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n}\n\n\nmd-content .set-setting {\n  margin-bottom: 20px;\n}\n\nmd-content .hint {\n  position: absolute;\n  left: 2px;\n  right: auto;\n  bottom: 7px;\n  font-size: 12px;\n  line-height: 14px;\n  color: grey;\n}\n\n.nr-dashboard-theme .nr-dashboard-template .md-button.add-button {\n  background: rgb(255, 255, 255);\n  background-color: rgb(255, 255, 255);\n  padding: 0 6px 0 6px;\n  margin: 6px 8px 6px 8px;\n  min-width: 88px;\n  border-radius: 3px;\n  font-size: 14px;\n  text-align: center;\n  color: rgb(49, 46, 46);\n  text-transform: uppercase;\n  text-decoration:none;\n  border: none;\n  outline: none;\n}\n\n.add-button:not([disabled]):hover {\n    background-color: rgba(193, 193, 193, 0.96);\n    color: rgb(49, 46, 46);\n    transition: 0.3s;\n}\n</style>\n<script>\n(function(scope) {\n  scope.show = null;\n  scope.devParams = {};\n\n  scope.paramm = {\n     t: 'Температура / °C',\n    t1: 'Температура #1 / °C',\n    t2: 'Температура #2 / °C',\n    t3: 'Температура #3 / °C',\n     h: 'Влажность / %',\n    h1: 'Влажность #1 / %',\n    h2: 'Влажность #2 / %',\n    h3: 'Влажность #3 / %',\n     c: 'Уровень CO2 / %',\n    c1: 'Уровень CO2 #1 / %',\n    c2: 'Уровень CO2 #2 / %',\n    c3: 'Уровень CO2 #3 / %',\n    d1: 'Статус двери / 0-1'\n  };\n\n  scope.type = {\n    info: 'info',\n    warn: 'warn'\n  };\n  \n  scope.addRule = function({topic, payload}) {\n    console.log(topic, payload);\n    scope.send({topic, payload, addrules:true});\n  };\n\n  scope.showParams = function(equ) {\n    console.log(equ);\n    //scope.required = true;\n    if (scope.show === equ.id) {\n    scope.devParams = {};\n    scope.show = null;\n    } else {\n    scope.devParams = {};\n    scope.devParams.topic = equ.topic;\n    scope.devParams.payload = {};\n    if ('d1' in equ) {\n    scope.devParams.payload.rules = {d1: { info: {min:-10, max:10, dur:0}, warn: {min:-11, max:11, dur:0} }};\n    } else if ('d2' in equ) {\n    scope.devParams.payload.rules = {d2: { info: {min:-10, max:10, dur:0}, warn: {min:-11, max:11, dur:0} }};\n    }\n    scope.show = equ.id;\n  }\n  };\n\n  scope.showMenu = function(event) {\n    this.$mdMenu.open(event);\n    //  console.log(event);\n  };\n\n  scope.required = true;\n  scope.selected;\n\n  console.log('------------Обновление--------------')\n})(scope);\n</script>\n<section ng-repeat=\"(key, value) in msg.payload\" class=\"device-panel-content-container\">\n  <md-toolbar flex=\"90\" layout-margin class=\"device-panel-item md-whiteframe-z1\">\n    <div class=\"md-toolbar-tools\">\n      <md-button class=\"md-icon-button md-ink-ripple\" aria-label=\"WiFi\" ng-disabled=\"true\" style=\"color: #32b561;\">\n        <ng-md-icon icon=\"wifi_tethering\" size=\"24\"></ng-md-icon>\n      </md-button>\n      <h2 class=\"md-toolbar-tools\"><span>{{value.id}}</span>&nbsp;&nbsp;&nbsp;<p>{{key}}</p></h2>\n      <span flex=\"\" class=\"flex\"></span>\n      <md-button class=\"md-icon-button md-ink-ripple\" ng-click=\"showParams(value)\" aria-label=\"More\">\n          <ng-md-icon icon=\"add\" size=\"24\"></ng-md-icon>\n      </md-button>\n      <!--<md-menu>\n        <md-button class=\"md-icon-button md-ink-ripple\" ng-click=\"showMenu($event)\" aria-label=\"More\">\n          <ng-md-icon icon=\"more_vert\" size=\"24\"></ng-md-icon>\n        </md-button>\n        <md-menu-content width=\"3\" class=\"menu-content\">\n          <md-menu-item>\n            <md-button ng-click=\"showShortParams(value)\">\n              Без правил\n            </md-button>\n          </md-menu-item>\n          <md-menu-item>\n            <md-button ng-click=\"showParams(value)\">\n              Настроить\n            </md-button>\n          </md-menu-item>\n        </md-menu-content>\n      </md-menu>-->\n    </div>\n  </md-toolbar>\n  <!--<div layout-margin  flex=\"80\" class=\"set-param\" ng-show=\"show == value.id\">-->\n  <md-content layout-margin flex=\"90\" class=\"set-param\" ng-show=\"show == value.id\" style=\"background: #fff;\">\n    <form name=\"form\" novalidate>\n      <md-list>\n        <md-list-item class=\"set-setting\">\n          <div layout=\"row\">\n            <md-input-container style=\"width:425px;\">\n              <label>оборудование</label>\n              <input ng-disabled=\"settingCount > 1\" required name=\"equ\" ng-model=\"devParams.payload.info.equ\">\n              <div class=\"hint\">пример: Multitron Pro #1</div>\n            </md-input-container>\n            <div flex=\"5\"></div>\n            <md-input-container style=\"width: 140px;\">\n              <label>идентификатор</label>\n              <input ng-disabled=\"settingCount > 1\" required name=\"sn\" ng-model=\"devParams.payload.info.sn\">\n              <div class=\"hint\">серийный номер</div>\n            </md-input-container>\n            <div flex=\"5\"></div>\n            <md-input-container style=\"width: 140px;\">\n              <label>локация</label>\n              <input ng-disabled=\"settingCount > 1\" required name=\"loc\" ng-model=\"devParams.payload.info.loc\">\n              <div class=\"hint\">пример: ЛГТ</div>\n            </md-input-container>\n            <div flex=\"5\"></div>\n            <md-input-container style=\"width: 170px;\">\n              <label>подписка</label>\n              <input ng-disabled=\"settingCount > 1\" name=\"subcode\" ng-model=\"devParams.payload.info.subcode\" type=\"number\" step=\"1\" ng-pattern=\"/^[0-9]{4}$/\" required>\n              <div class=\"hint\">код для отчётов</div>\n            </md-input-container>\n          </div>\n        </md-list-item>\n        <md-list-item ng-repeat=\"(rule, val) in value.rules\" ng-show=\"true\">\n          <div layout=\"column\">\n            <div layout=\"row\">\n              <md-input-container style=\"width:240px;\">\n                <input name=\"key\" ng-model=\"paramm[rule]\" ng-disabled=\"true\" type=\"text\">\n              </md-input-container>\n              <div flex=\"5\"></div>\n              <md-input-container style=\"width: 150px;\">\n                <input name=\"info\" ng-model=\"type['info']\" ng-disabled=\"true\">\n              </md-input-container>\n              <div flex=\"5\"></div>\n              <md-input-container style=\"width: 150px;\">\n                <label>минимум</label>\n                <input name=\"min\" ng-model=\"devParams.payload.rules[rule].info.min\" type=\"number\" step=\"0.1\" ng-required=\"required\">\n              </md-input-container>\n              <div flex=\"5\"></div>\n              <md-input-container style=\"width: 150px;\">\n                <label>максимум</label>\n                <input name=\"max\" ng-model=\"devParams.payload.rules[rule].info.max\" type=\"number\" step=\"0.1\" ng-required=\"required\">\n              </md-input-container>\n              <div flex=\"5\"></div>\n              <md-input-container style=\"width: 180px;\">\n                <label>длительность</label>\n                <input name=\"dur\" ng-model=\"devParams.payload.rules[rule].info.dur\" type=\"number\" step=\"1\" ng-required=\"required\">\n                <div class=\"hint\">в минутах</div>\n              </md-input-container>\n            </div>\n            <div layout=\"row\">\n              <md-input-container style=\"width:240px;\">\n                <!--<input name=\"key\" ng-model=\"paramm[key]\"  ng-disabled=\"true\" type=\"text\">-->\n              </md-input-container>\n              <div flex=\"5\"></div>\n              <md-input-container style=\"width:150px;\">\n                <input name=\"warn\" ng-model=\"type['warn']\" ng-disabled=\"true\">\n              </md-input-container>\n              <div flex=\"5\"></div>\n              <md-input-container style=\"width: 150px;\">\n                <label>минимум</label>\n                <input name=\"min\" ng-model=\"devParams.payload.rules[rule].warn.min\" type=\"number\" step=\"0.1\" ng-required=\"required\">\n              </md-input-container>\n              <div flex=\"5\"></div>\n              <md-input-container style=\"width: 150px;\">\n                <label>максимум</label>\n                <input name=\"max\" ng-model=\"devParams.payload.rules[rule].warn.max\" type=\"number\" step=\"0.1\" ng-required=\"required\">\n              </md-input-container>\n              <div flex=\"5\"></div>\n              <md-input-container style=\"width: 180px;\">\n                <label>длительность</label>\n                <input name=\"dur\" ng-model=\"devParams.payload.rules[rule].warn.dur\" type=\"number\" step=\"1\" ng-required=\"required\">\n                <div class=\"hint\">в минутах</div>\n              </md-input-container>\n            </div>\n          </div>\n        </md-list-item>\n      </md-list>\n      <div layout=\"column\" layout-align=\"center stretch\">\n       <md-button flex=\"90\" class=\"add-button md-button\" ng-show=\"form.$valid\" ng-click=\"addRule(devParams)\">Добавить</md-button>\n      </div>\n    </form>\n  </md-content>\n</section>\n<pre>\ndevParams: {{devParams | json}}\nshow: {{show}}\n</pre>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "templateScope": "local",
+        "x": 740,
+        "y": 340,
+        "wires": [
+            [
+                "b1381061.4d699",
+                "f43ddf32.d3cbd"
+            ]
+        ]
+    },
+    {
+        "id": "f43ddf32.d3cbd",
+        "type": "function",
+        "z": "e5309594.d40e48",
+        "name": "ch",
+        "func": "const ts = Date.now();\nflow.set('tstart', ts, 'memory');\nlet device = null;\nlet prop;\n\nif (msg.addrules) {\n  try {\n    context.set(msg.topic, msg.payload, 'file');\n    device = {\n      topic: 'added',\n      payload: msg.topic\n    };\n  } catch (err) {\n    node.error(err);\n  }\n  prop = 'added';\n} else if (msg.keys) {\n  try {\n    msg.payload = context.get(context.keys('rules'), 'file');\n  } catch (err) {\n    node.error(err);\n  }\n  prop = 'keys';\n} else {\n  try {\n    const rule = context.get(msg.topic, 'file');\n    if (rule) {\n      msg.payload = Object.assign({}, msg.payload, rule.info);   \n      msg.rules = rule.rules;\n      //msg.info = rule.info;\n      device = null;\n    } else {\n      device = {\n        topic: msg.topic,\n        payload: msg.payload\n      };\n    }\n    prop = 'get';\n  } catch (err) {\n    node.error(err);\n  }\n}\nif (msg.payload === undefined)\n  prop = 'undef';\n\nnode.status({ fill: \"green\", shape: \"dot\", text: `${prop} : ${(Date.now() - ts)} ms` });\nconst log = {topic: 'logging', payload: `${new Date().toLocaleString()} : ${msg.topic} : ${prop} : ${(Date.now() - ts)} ms`};\nreturn [msg, device, log];",
+        "outputs": 3,
+        "noerr": 0,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "9887ecee.5c00d",
+                "c9c7e3b2.b0efa"
+            ],
+            [
+                "59570f93.ac239",
+                "350c7e1c.0ad032"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "59570f93.ac239",
+        "type": "function",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "func": "if (msg.topic === 'makeClean') {\n    let devices = context.get('devices') || {};\n    devices = {};\n    context.set('devices', {});\n    msg = {};\n    msg.payload = devices;\n    let size = Object.keys(msg.payload).length;\n    \n    node.status({ fill: \"green\", shape: \"dot\", text: size });\n    return null;\n} else if (msg.topic === 'added') {\n\n    let devices = context.get('devices') || {};\n    delete devices[msg.payload];\n    context.set('devices', devices);\n\n    msg = {};\n    msg.payload = devices;\n    let size = Object.keys(msg.payload).length;\n\n    node.status({ fill: \"green\", shape: \"dot\", text: size });\n    return msg;\n}\n    let devices = context.get('devices') || {};\n    if (!devices[msg.topic]) {\n\n    let rules = {};\n//    delete msg.payload.d1;\n//    delete msg.payload.d2;\n    delete msg.payload.fw;\n    delete msg.payload.moniqueID;\n\n    for (let key in msg.payload) {\n        if (key === 'id' ||\n            key === 'd1' ||\n            key === 'd2') {\n            continue;\n        }\n        rules[key] = {}\n    }\n    msg.payload.rules = rules;\n    \n    msg.payload.topic = msg.topic;\n    devices[msg.topic] = msg.payload;\n\n    context.set('devices', devices);\n    msg = {};\n    msg.payload = devices;\n    let size = Object.keys(msg.payload).length;\n\nnode.status({ fill: \"green\", shape: \"dot\", text: size });\nreturn msg;\n} else {\n return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 570,
+        "y": 340,
+        "wires": [
+            [
+                "b0cd5e59.1025d",
+                "16614ac0.d8ddc5"
+            ]
+        ]
+    },
+    {
+        "id": "9887ecee.5c00d",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 410,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b1381061.4d699",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 930,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "8c14a3ca.d0c4f",
+        "type": "inject",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "topic": "makeClean",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 580,
+        "y": 400,
+        "wires": [
+            [
+                "59570f93.ac239"
+            ]
+        ]
+    },
+    {
+        "id": "16614ac0.d8ddc5",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 790,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "bfb483b8.f5905",
+        "type": "ui_template",
+        "z": "e5309594.d40e48",
+        "group": "3cec48dd.d53ff8",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n.nr-dashboard-theme .nr-dashboard-template .md-button.md-icon-button {\n    margin: 0 6px;\n    height: 40px;\n    min-width: 0;\n    line-height: 24px;\n    padding: 0px 0px;\n    width: 45px;\n    border-radius: 50%;\n    background: transparent;\n    color: #717171;\n}\n\nmd-input-container {\n\n    display: inline-block;\n    position: relative;\n    padding: 2px;\n    margin: 5px 0;\n    vertical-align: middle;\n}\n.device-panel-content-container {\n  overflow: hidden;\n}\n\n.device-panel-content-container:hover {\n    overflow-y: auto;\n}\n\n.device-panel-i {\n  border: 1px solid #E4E5E7;\n  background: #fff;\n}\n\n.device-panel-item-content {\n\tmax-height: 150px;\n\twidth: 100%;\n}\n\n.post-header-profile-image-background {\n  max-width: 48px;\n  max-height: 48px;\n  /*background-color: #696969;*/\n  /*border-radius: 3px;*/\n  margin-right: 10px;\n  margin-left: 15px;\n}\n\n.post-header-profile-image {\n  max-width: 48px;\n  max-height: 48px;\n  border-radius: 5px;\n}\n\n.panel-header {\n  width: 100%;\n  background-color: white;\n  padding: 10px !important;\n}\n\n.post-header-id {\n  white-space: nowrap;\n  -ms-text-overflow: ellipsis;\n  -o-text-overflow: ellipsis;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  font-size: 18px;\n  font-weight: bold;\n  color: rgba(0,0,0,0.6);\n  padding-bottom: 2px;\n}\n\n.cursor-pointer {\n  cursor: pointer;\n}\n\n.cursor-default {\ncursor: default;\n}\n\n.post-header-msg {\n  color: #858585;\n  font-size: 16px;\n  font-weight: 400;\n  margin: 0 2.5px 0 0;\n}\n\n.icon-button:hover {\n  border-radius: 5px;\n  background-color: rgba(158,158,158,0.2) !important;\n  -webkit-transition: border 150ms linear, background-color 150ms linear;\n  -moz-transition: border 150ms linear, background-color 150ms linear;\n  -o-transition: border 150ms linear, background-color 150ms linear;\n  transition: border 150ms linear, background-color 150ms linear;\n}\n\n.icon-button {\n  width: 37px !important;\n  height: 35px !important;\n  border-radius: 5px !important;\n  margin: 0 !important;\n  font-size: 24px !important;\n}\n\n.menu-content {\n  max-height: 400px;\n}\n\n.panel-content {\n  overflow: hidden;\n  padding: 0 25px 15px 35px;\n  line-height: 160%;\n  font-size: 14px;\n  background-color: white;\n  color: #343F48;\n  display: block;\n  min-height: 50px !important;\n}\n\n.panel-content>div {\n  min-height: 20px;\n}\n\n.panel-content:hover {\n    overflow: auto;\n  }\n\n.device-panel-item-content {\n\tmax-height: 150px;\n\twidth: 100%;\n}\n\n.panel-footer-add-comment {\n  font-size: 12px;\n  font-weight: bold;\n  font-style: italic;\n  color: #AFACAC;\n  text-transform: none;\n\tvertical-align: middle;\n}    \n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "global",
+        "x": 600,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ed130cf.6ebac",
+        "type": "inject",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 260,
+        "y": 220,
+        "wires": [
+            [
+                "1ec36cbf.189573"
+            ]
+        ]
+    },
+    {
+        "id": "1ec36cbf.189573",
+        "type": "function",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "func": "const rr = {\"info\":{\"equ\":\"Sanyo MD33\",\"lab\":\"ЛЦ\",\"loc\":\"404\",\"subcode\":9876},\"rules\":{\"t1\":{\"info\":{\"min\":-22,\"max\":-18,\"dur\":3},\"warn\":{\"min\":-26,\"max\":-10,\"dur\":5}}}}\nconst hh = {\"info\":{\"equ\":\"Liebhher LD4010\",\"sn\":\"12887654\",\"loc\":\"ЛГТ\",\"subcode\":5678},\"rules\":{\"t1\":{\"info\":{\"min\":2,\"max\":8,\"dur\":1},\"warn\":{\"min\":0,\"max\":10,\"dur\":1}}}};\nconst gg = {\"info\":{\"equ\":\"Polair FR3\",\"sn\":\"32127657\",\"loc\":\"ОРА2.0\",\"subcode\":4321},\"rules\":{\"t1\":{\"info\":{\"min\":2,\"max\":8,\"dur\":2},\"warn\":{\"min\":0,\"max\":10,\"dur\":2}}}};\nconst ll = {\"info\":{\"equ\":\"Panasonic MD55\",\"sn\":\"12303943\",\"loc\":\"ДАР\",\"subcode\":3223},\"rules\":{\"t1\":{\"info\":{\"min\":-22,\"max\":-18,\"dur\":2},\"warn\":{\"min\":-23,\"max\":-17,\"dur\":2}}}};\n\nmsg.topic = 'spb/334455/status';\nmsg.payload = gg;\nmsg.addrules = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 220,
+        "wires": [
+            [
+                "f43ddf32.d3cbd"
+            ]
+        ]
+    },
+    {
+        "id": "c9c7e3b2.b0efa",
+        "type": "function",
+        "z": "e5309594.d40e48",
+        "name": "rules",
+        "func": "const timestamp = Date.now();\nconst oldStatus = context.get(msg.topic, 'memory') || false;\n//if(!oldStatus) console.log(`${msg.topic} / ${oldStatus}`);\nconst ruleCheck = ({ min, max }, value) => parseFloat(min) > parseFloat(value) || parseFloat(max) < parseFloat(value);\nconst setNow = (value, level, timestamp, duration) => ({ value, level, timestamp, duration });\nconst details = (param, value, { min, max }, level, dur) => ({ level, [param]:value, min, max, dur });\nconst duration = old => Date.now() - old;\nconst { payload, rules } = msg;\nconst { id } = payload;\nconst newStatus = {};\nconst log = {};\nlet report = [];\nlet gen = {};\n\ntry {\n  if (rules && rules !== 'null') {\n    //for (let key in rules) { \n     Object.keys(rules).forEach(key => {\n      let now = {};\n      const old = oldStatus ? oldStatus[key] : false;\n      //console.log(old);\n      const value = payload[key];\n      const { warn, info } = rules[key];\n\n      if (ruleCheck(warn, value)) {\n        if (old && old.level === 'warn') {\n          const dur = timestamp - old.timestamp;\n            if (dur >= (warn.dur * 60 * 1000)) {\n              report.push(details(key, value, warn, 'warn', dur));\n              //console.log(report);\n              now = setNow(value, 'warn', timestamp, 0);\n            } else {\n          \t  now = setNow(value, 'warn', old.timestamp, dur);\n            }\n        } else {\n          now = setNow(value, 'warn', timestamp, 0);\n        }\n      } else if (ruleCheck(info, value)) {\n        if (old && old.level === 'info') {\n          const dur = timestamp - old.timestamp;\n            if (dur >= (info.dur * 60 * 1000)) {\n              report.push(details(key, value, info, 'info', dur));\n              //console.log(report);\n              now = setNow(value, 'info', timestamp, 0);\n            } else {\n              now = setNow(value, 'info', old.timestamp, dur);\n            }\n        } else {\n          now = setNow(value, 'info', timestamp, 0);\n        }\n      } else {\n        now.value = value;\n        now.level = 'good';\n      }\n      newStatus[key] = now;\n    });\n  } else {\n    //node.error('No rule');\n    return [null, null, null, null];\n  }\n} catch (err) {\n  node.error(err, msg);\n  msg.error = err;\n}\n\ncontext.set(msg.topic, newStatus, 'memory');\n\nconst statusOutput = {};\nstatusOutput.topic = msg.topic;\nstatusOutput.payload = newStatus;\n\n//msg.payload = Object.assign({}, payload, info);\n//msg.payload.info = info;\n//msg.payload.original = values;\n//msg.status = newStatus;\n\n//msg.statafter = status;\n//console.log(report);\nif (report.length !== 0) {\n  gen.payload = {\n      reportId: Date.now(),\n      deviceId: id,\n      info: payload,\n      details: report,\n      topic: msg.topic,\n      rules: rules\n  };\n  gen.topic = msg.topic;\n} else {\n  gen = null;\n}\n\nlet count = flow.get('count', 'memory') || {};\nif (!count.sent) count.sent = 0;\ncount.sent += 1;\nflow.set('count', count, 'memory');\nconst ts = flow.get('tstart', 'memory');\nnode.status({ fill: \"green\", shape: \"dot\", text: `${count.sent} : ${(Date.now() - ts)}` });\nlog.payload = `${new Date().toLocaleString()} : ${msg.topic} : rules : ${(Date.now() - ts)} ms`;\ndelete msg.values;\ndelete msg.rules;\ndelete msg.info;\nreturn [msg, statusOutput, gen, log];",
+        "outputs": 4,
+        "noerr": 0,
+        "x": 570,
+        "y": 280,
+        "wires": [
+            [
+                "df6b926f.09662",
+                "cb2dba31.45ace8"
+            ],
+            [
+                "e5b21a9e.383f38"
+            ],
+            [
+                "c34efefc.2e7ba",
+                "31bbb085.8ecbd"
+            ],
+            [
+                "30fd235.e91c1dc"
+            ]
+        ]
+    },
+    {
+        "id": "30fd235.e91c1dc",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 930,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e5b21a9e.383f38",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 930,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "df6b926f.09662",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 930,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c34efefc.2e7ba",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 930,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cb2dba31.45ace8",
+        "type": "function",
+        "z": "e5309594.d40e48",
+        "name": "toDB",
+        "func": "msg.payload.date = new Date();\nmsg.payload.ts = Date.now();\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [
+                "6a63e8ba.ecf568",
+                "d24b4cde.1828c"
+            ]
+        ]
+    },
+    {
+        "id": "6a63e8ba.ecf568",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 930,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "350c7e1c.0ad032",
+        "type": "debug",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 370,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "245015b6.dabb0a",
+        "type": "function",
+        "z": "489b36ab.2c5e48",
+        "name": "rules",
+        "func": "const timestamp = Date.now();\nconst oldStatus = context.get(msg.topic, 'file') || false;\n//if(!oldStatus) console.log(`${msg.topic} / ${oldStatus}`);\nconst ruleCheck = ({ min, max }, value) => parseFloat(min) > parseFloat(value) || parseFloat(max) < parseFloat(value);\nconst setNow = (value, level, timestamp, duration) => ({ value, level, timestamp, duration });\nconst details = (param, value, level, dur) => ({ level, [param]:value, dur });\nconst duration = old => Date.now() - old;\nconst { payload, rules, info } = msg;\nconst { id } = payload;\nconst newStatus = {};\nconst log = {};\nlet report = [];\nlet gen = {};\n\ntry {\n  if (rules && rules !== 'null') {\n    for (let key in rules) {\n      let now = {};\n      const old = oldStatus ? oldStatus[key] : false;\n      //console.log(old);\n      const value = payload[key];\n      const { warn, info } = rules[key];\n\n      if (ruleCheck(warn, value)) {\n        if (old && old.level === 'warn') {\n          const dur = timestamp - old.timestamp;\n            if (dur >= warn.dur) {\n              report.push(details(key, value, 'warn', dur));\n              now = setNow(value, 'warn', timestamp, 0);\n            } else {\n          \t  now = setNow(value, 'warn', old.timestamp, dur);\n            }\n        } else {\n          now = setNow(value, 'warn', timestamp, 0);\n        }\n      } else if (ruleCheck(info, value)) {\n        if (old && old.level === 'info') {\n          const dur = timestamp - old.timestamp;\n            if (dur >= info.dur) {\n              report.push(details(key, value, 'info', dur));\n              now = setNow(value, 'info', timestamp, 0);\n            } else {\n              now = setNow(value, 'info', old.timestamp, dur);\n            }\n        } else {\n          now = setNow(value, 'info', timestamp, 0);\n        }\n      } else {\n        now.value = value;\n        now.level = 'good';\n      }\n      newStatus[key] = now;\n    }\n  } else {\n    //node.error('No rule');\n    return [null, null, null, null];\n  }\n} catch (err) {\n  node.error(err, msg);\n  msg.error = err;\n}\n\ncontext.set(msg.topic, newStatus, 'file');\n\nconst statusOutput = {};\nstatusOutput.topic = msg.topic;\nstatusOutput.payload = newStatus;\n\nmsg.payload = Object.assign({}, payload, info);\n//msg.payload.info = info;\n//msg.payload.original = values;\n//msg.status = newStatus;\n\n//msg.statafter = status;\n\nif (report.length !== 0) {\n  gen.payload = {\n      reportId: Date.now(),\n      deviceId: id,\n      info: info,\n      details: report,\n      topic: msg.topic,\n      rules: rules\n  };\n  gen.topic = msg.topic;\n} else {\n  gen = null;\n}\n\nlet count = flow.get('count') || {};\nif (!count.sent) count.sent = 0;\ncount.sent += 1;\nflow.set('count', count);\nconst ts = flow.get('tstart', 'memory');\nnode.status({ fill: \"green\", shape: \"dot\", text: `${count.sent} : ${(Date.now() - ts)}` });\nlog.payload = `${new Date().toLocaleString()} : ${msg.topic} : rules : ${(Date.now() - ts)} ms`;\ndelete msg.values;\ndelete msg.rules;\ndelete msg.info;\nreturn [msg, statusOutput, gen, log];",
+        "outputs": 4,
+        "noerr": 0,
+        "x": 392.5,
+        "y": 170,
+        "wires": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "520c2973.64d588",
+        "type": "inject",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "topic": "spb/433435/status",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 240,
+        "y": 700,
+        "wires": [
+            [
+                "5b5c14f7.d3adcc"
+            ]
+        ]
+    },
+    {
+        "id": "5b5c14f7.d3adcc",
+        "type": "mqtt out",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "broker": "bddd3b61.2f7d88",
+        "x": 730,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "70e14f60.5186e",
+        "type": "inject",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "topic": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 530,
+        "y": 440,
+        "wires": [
+            [
+                "b0cd5e59.1025d"
+            ]
+        ]
+    },
+    {
+        "id": "598cc5f3.6add4c",
+        "type": "function",
+        "z": "33052606.1cec9a",
+        "name": "map",
+        "func": "//console.time('chts');\nconst tstart = Date.now();\n\nconst chart = [];\nconst table = [];\nlet num = 0;\n\nconst d1 = {info:{min:-1,max:5},warn:{min:-2,max:6}};\n\nconst { payload, rules } = msg;\n\nif ('d1' in payload[0]) {\n    rules.d1 = d1;\n    node.warn(`${payload[0].id} : d1`);\n}\n\nconst series = {\n  t: 'температура',\n  t1: 'температура',\n  t2: 'температура',\n  h: 'влажность',\n  h1: 'влажность',\n  c: 'CO2',\n  c1: 'CO2',\n  d1: 'дверь'\n};\n\nconst ruleCheck = ({ min, max }, value) => parseFloat(min) > parseFloat(value) || parseFloat(max) < parseFloat(value);\nconst addRow = (time, param, value, level) => ({ time, param, value, level });\n\nObject.keys(rules).forEach(key => {\n  const data = payload.map(value => {\n    if (ruleCheck(rules[key].warn, value[key])) {\n      table.push(addRow(value.ts, series[key], value[key], 'warn'));\n    } else if (ruleCheck(rules[key].info, value[key])) {\n      table.push(addRow(value.ts, series[key], value[key], 'info'));\n    }\n    return [ value.ts, value[key] ];\n  });\n  const zones = [\n     {\n      value: rules[key].info.min,\n\t  color: '#ff0000'\n      }, {\n\t  value: rules[key].info.max\n\t  }, {\n\t  value: 999,\n\t  color: '#ff0000'\n\t\t}];\n  if (key === 'd1') {\n  chart.push({ name: series[key], type:\"area\", step:\"left\", data, zones});\n  } else {\n  chart.push({ name: series[key], yAxis :1, data, zones});\n  }\n});\n\ntable.sort((a, b) => a.time - b.time);\n\nconst values = table.map((value, i) => {\n  value.num = i + 1;\n  value.time = new Date(value.time).toLocaleString();\n  return value;\n});\nmsg.sn = payload[0].sn;\nmsg.loc = payload[0].loc;\nmsg.equ = payload[0].equ;\nmsg.chart = JSON.stringify(chart);\nmsg.payload = { headers: ['#', 'дата', 'параметр', 'значение', 'уровень'], values };\n//console.timeEnd('chts');\nmsg.options = {\"format\": \"A4\",        // allowed units: A3, A4, A5, Legal, Letter, Tabloid\n  \"orientation\": \"portrait\", // portrait or landscape\n  \"base\": \"file:///C:/Users/Sin/.node-red/\",\n  \"type\": \"pdf\",\n  \"childProcessOptions\": {\n  \"detached\": true\n  },\n    paginationOffset: 1,       // Override the initial pagination number\n  \"footer\": {\n    \"height\": \"15mm\",\n    \"contents\": {\n      default: '<span style=\"margin-left:180mm;color: #444;\">стр: {{page}}</span>/<span>{{pages}}</span>' // fallback value\n    }\n  }\n};\nnode.status({ text: `time: ${(Date.now() - tstart)} ms.` });\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "62296acc.e07664",
+                "d6c0a613.eaf688"
+            ]
+        ]
+    },
+    {
+        "id": "29947f99.47237",
+        "type": "function",
+        "z": "33052606.1cec9a",
+        "name": "req Mongo",
+        "func": "if (msg.payload.details[0].level) {\nconst { reportId, deviceId } = msg.payload;\nmsg.filename = `reps\\\\${reportId}.pdf`;\nmsg.htmlfilename = `${reportId}.html`;\nmsg.reportId = reportId;\nmsg.repgen = Object.assign({}, msg.payload, {filename: `${reportId}.pdf`});\nmsg.rules = msg.repgen.rules;\nmsg.payload = [\n    { \n        id:deviceId,\n        ts: {  $gt: Date.now() - (1 * 60 * 60 *1000) } \n    },\n    {projection :\n    {_id:0, info:0, original:0}\n    }\n];\nreturn msg;\n} else {\nmsg = null;\nreturn null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "b193a4bc.b21218"
+            ]
+        ]
+    },
+    {
+        "id": "b193a4bc.b21218",
+        "type": "mongodb3 in",
+        "z": "33052606.1cec9a",
+        "service": "_ext_",
+        "configNode": "4680f03.bc0981",
+        "name": "find",
+        "collection": "data",
+        "operation": "find.toArray",
+        "x": 150,
+        "y": 240,
+        "wires": [
+            [
+                "598cc5f3.6add4c",
+                "9d6636ba.c8da58"
+            ]
+        ]
+    },
+    {
+        "id": "915a6e2e.21103",
+        "type": "debug",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 710,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "adbe08a6.8be7b8",
+        "type": "HTML-PDF",
+        "z": "33052606.1cec9a",
+        "name": "HTML-PDF",
+        "output": "file",
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "cb990d6a.1179c",
+                "d3101314.a682b"
+            ]
+        ]
+    },
+    {
+        "id": "cb990d6a.1179c",
+        "type": "function",
+        "z": "33052606.1cec9a",
+        "name": "clean",
+        "func": "const done = {};\nif (msg.payload.filename) {\ndone.payload = Object.assign({}, {createdAt: new Date()}, msg.repgen);\n} else {\n    msg = null;\n}\nmsg = null;\nreturn done;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 550,
+        "y": 280,
+        "wires": [
+            [
+                "8817d16f.12e0e",
+                "915a6e2e.21103"
+            ]
+        ]
+    },
+    {
+        "id": "8817d16f.12e0e",
+        "type": "mongodb3 in",
+        "z": "33052606.1cec9a",
+        "service": "_ext_",
+        "configNode": "4680f03.bc0981",
+        "name": "insert",
+        "collection": "reports",
+        "operation": "insertOne",
+        "x": 550,
+        "y": 320,
+        "wires": [
+            [
+                "915a6e2e.21103"
+            ]
+        ]
+    },
+    {
+        "id": "62296acc.e07664",
+        "type": "template",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n\n<head>\n  <title>Отчёт</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <script src=\"/highcharts.js\"></script>\n  <style>\n  @media (min-width: 300px) {\n    #pageHeader {\n      width: 180mm;\n      height: 130px;\n      margin: 0 auto;\n      text-align: center;\n    }\n    #container {\n      width: 180mm;\n      height: 300px;\n      margin: 0 auto;\n    }\n    #values {\n      width: 160mm;\n      margin: 0 auto\n    }\n  }\n\n  @media (min-width: 600px) {\n    #container {\n      width: 70%;\n      height: 300px;\n      margin: 0 auto;\n    }\n    #values {\n      width: 68%;\n      margin: 0 auto\n    }\n    hr {\n      border: 0;\n      border-top-width: 0px;\n      border-top-style: none;\n      border-top-color: currentcolor;\n      border-top: 1px solid rgba(0, 0, 0, .1);\n    }\n  }\n\n  body {\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  }\n\n  .logo {\n    width: 187px;\n    height: 71px;\n  }\n\n  #pageHeader {\n    width: 180mm;\n    height: 130px;\n    margin: 0 auto;\n    text-align: center;\n  }\n\n  #pageFooter {\n    width: 180mm;\n    height: 30px;\n    margin: 0 auto;\n    text-align: center;\n  }\n\n  table {\n    font-size: 14px;\n    line-height: 1.42857143;\n    color: #333;\n    width: 100%;\n    max-width: 100%;\n    margin-bottom: 20px;\n    border: 1px solid #ddd;\n    border-collapse: collapse;\n    padding: 1px;\n  }\n\n  th {\n    background-color: #FFFFFF;\n    vertical-align: bottom;\n    border: 1px solid #ddd;\n    border-collapse: collapse;\n    padding: 1px;\n  }\n\n  td {\n    vertical-align: bottom;\n    border: 1px solid #ddd;\n    border-collapse: collapse;\n    padding: 1px;\n  }\n\n   tr:nth-child(odd) {\n    background: #f0f0f0; /* Цвет фона */\n   } \n   tr:nth-child(even) {\n    background: #fff; /* Цвет фона */\n   } \n\n  thead {\n    display: table-header-group;\n  }\n\n  tr {\n    page-break-inside: avoid;\n  }\n\n  .text-center {\n    text-align: center;\n  }\n  </style>\n</head>\n\n<body class=\"border-right-1\">\n  <div id=\"pageHeader\">\n    <div class=\"logo col-sm-4\">\n      <svg version=\"1.1\" id=\"logo\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 171 36.227\" enable-background=\"new 0 0 171 36.227\" xml:space=\"preserve\">\n        <path d=\"M19.73,3.418c1.452,0,2.771,0.128,3.962,0.376c1.196,0.256,2.22,0.671,3.069,1.252c0.854,0.575,1.513,1.348,1.983,2.307\n\tc0.466,0.958,0.701,2.141,0.701,3.551c0,1.521-0.346,2.793-1.045,3.802c-0.693,1.022-1.726,1.847-3.086,2.498\n\tc1.873,0.537,3.273,1.469,4.197,2.813c0.92,1.342,1.383,2.959,1.383,4.849c0,1.521-0.297,2.837-0.895,3.955\n\tc-0.595,1.111-1.396,2.02-2.407,2.729c-1.011,0.702-2.16,1.228-3.45,1.564c-1.294,0.333-2.619,0.506-3.983,0.506H5.414V3.418H19.73z\n\t M18.88,15.64c1.195,0,2.173-0.282,2.939-0.842c0.766-0.57,1.151-1.483,1.151-2.754c0-0.704-0.128-1.284-0.386-1.738\n\tc-0.257-0.447-0.596-0.799-1.023-1.055c-0.425-0.255-0.915-0.428-1.467-0.529c-0.554-0.098-1.13-0.143-1.725-0.143h-6.267v7.062\n\tH18.88z M19.264,28.458c0.65,0,1.274-0.064,1.873-0.187c0.595-0.127,1.12-0.338,1.578-0.638c0.453-0.295,0.817-0.704,1.088-1.209\n\tc0.27-0.505,0.404-1.154,0.404-1.941c0-1.553-0.44-2.657-1.319-3.322c-0.882-0.659-2.048-0.99-3.495-0.99h-7.29v8.287H19.264z\" />\n        <rect x=\"35.411\" y=\"3.417\" width=\"6.688\" height=\"30.203\" />\n        <path d=\"M124.212,3.418l11.384,30.202h-6.948l-2.298-6.728h-11.379l-2.388,6.728h-6.731l11.507-30.202H124.212z M124.599,21.946\n\tl-3.835-11.084h-0.085l-3.964,11.084H124.599z\" />\n        <path d=\"M151.359,3.418c1.958,0,3.785,0.307,5.478,0.926c1.685,0.626,3.151,1.552,4.385,2.791c1.235,1.247,2.201,2.794,2.897,4.653\n\tc0.691,1.865,1.045,4.051,1.045,6.56c0,2.199-0.283,4.23-0.856,6.097c-0.565,1.859-1.422,3.463-2.575,4.817\n\tc-1.151,1.354-2.587,2.415-4.304,3.194c-1.718,0.772-3.738,1.163-6.069,1.163h-13.123V3.418H151.359z M150.89,28.036\n\tc0.965,0,1.904-0.154,2.811-0.46c0.91-0.313,1.721-0.831,2.429-1.547c0.712-0.722,1.282-1.66,1.705-2.817\n\tc0.426-1.157,0.64-2.562,0.64-4.23c0-1.52-0.151-2.894-0.446-4.127c-0.297-1.221-0.784-2.275-1.472-3.144\n\tc-0.678-0.875-1.583-1.546-2.707-2.012c-1.119-0.467-2.508-0.704-4.149-0.704h-4.776v19.042H150.89z\" />\n        <path fill=\"#32B561\" d=\"M96.771,4.692c2.625,1.503,4.644,3.614,5.959,6.188l3.025-2.872c-3.829-5.391-8.871-6.489-12.763-6.554\n\tC89.664,1.4,86.438,2.708,83.86,4.403C88.522,2.353,94.017,3.116,96.771,4.692\" />\n        <path fill=\"#32B561\" d=\"M104.97,28.083l-2.297-3.75c0,0-3.743,4.197-9.489,4.197c-1.787,0-3.29-0.213-4.63-0.756\n\tc1.729,1.478,3.979,2.768,6.738,2.99C99.58,31.117,102.512,29.718,104.97,28.083\" />\n        <path fill=\"#32B561\" d=\"M83.745,12.2c0.015-0.029,0.029-0.061,0.045-0.089c0.115-0.224,0.231-0.441,0.36-0.652\n\tc0.058-0.088,0.116-0.172,0.175-0.255c1.052-1.623,2.525-2.837,4.273-3.655c0.115-0.051,2.992-1.457,6.803-0.895\n\tc1.242,0.182,2.881,0.531,4.4,1.528c-0.984-1.063-2.138-1.988-3.463-2.747c-3.527-2.021-12.421-2.591-16.832,3.527\n\tc-0.034,0.043-1.803,2.203-2.807,4.786c-0.495,1.273-0.849,2.543-1.192,3.771c-0.289,1.04-0.586,2.1-0.972,3.185\n\tc-0.228,0.913-0.554,1.811-1,2.578c-1.844,3.141-5.175,5.116-8.984,5.116c-1.28,0-2.602-0.199-3.817-0.595\n\tc1.508,0.935,3.249,1.63,5.154,1.986c4.373,0.814,8.613-0.228,11.35-2.79c1.783-1.671,3.351-5.132,4.659-10.292\n\tC82.358,14.887,83.224,13.15,83.745,12.2\" />\n        <path fill=\"#32B561\" d=\"M96.569,31.677c-0.436,0-0.884-0.019-1.347-0.055c-6.957-0.563-10.803-7.157-11.414-8.291\n\tc-0.044-0.068-0.09-0.131-0.134-0.198c-0.948-1.51-1.305-3.063-1.364-4.656c-1.016,3.579-2.186,6.253-3.492,8.001\n\tc1.789,2.871,5.407,5.656,9.364,6.68c7.054,1.832,12.779-1.061,15.626-3.369C101.853,30.854,99.523,31.677,96.569,31.677\" />\n        <path fill=\"#32B561\" d=\"M60.668,3.615c4.836-0.087,8.311,1.237,11.182,4.265c2.02,2.133,3.178,4.636,3.423,7.353\n\tc0.183-0.592,0.384-1.189,0.62-1.795c0.739-1.898,1.834-3.537,2.456-4.384c-2.921-4.402-8.043-7.167-13.911-7.167\n\tc-3.435,0-6.604,0.952-9.228,2.619C56.901,3.88,58.714,3.645,60.668,3.615\" />\n        <path fill=\"#32B561\" d=\"M68.788,30.919c-1.004,0-2.029-0.094-3.06-0.287c-4.612-0.86-8.398-3.529-10.16-7.142\n\tc-0.083-0.121-0.174-0.234-0.255-0.358c-0.058-0.087-0.114-0.184-0.167-0.279c-0.312-0.635-0.563-1.309-0.753-2.019\n\tc-0.17-0.675-0.291-1.403-0.356-2.134c-0.024-0.314-0.055-0.628-0.055-0.952v-0.03c0.002-1.009,0.136-1.974,0.363-2.89\n\tc0.966-3.412,2.915-5.706,6.124-7.203c1.627-0.765,5.985-1.424,9.525,0.895c2.044,1.337,3.24,2.977,3.949,4.482\n\tc-0.52-1.642-1.428-3.17-2.72-4.534c-2.725-2.875-5.87-4.065-10.539-3.994c-3.958,0.062-7.179,0.93-9.986,4.382\n\tc-0.029,0.042-0.062,0.08-0.089,0.123c-0.591,0.8-1.018,1.572-1.28,2.2c-0.646,1.566-1.719,4.556-1.229,8.466\n\tc0.042,0.343,0.098,0.692,0.161,1.041c0.017,0.084,0.038,0.165,0.055,0.25c0.063,0.311,0.134,0.621,0.214,0.934\n\tc0.047,0.179,0.097,0.356,0.148,0.533c0.086,0.287,0.182,0.575,0.283,0.861c0.036,0.095,0.065,0.193,0.101,0.287\n\tc1.513,4.005,4.761,7.8,10.765,9.512c7.821,2.229,13.775-1.407,16.802-4.479C74.468,30.102,71.726,30.919,68.788,30.919\" /> </svg>\n    </div>\n    <hr>\n  </div>\n  <div id=\"container\"></div>\n  <script>\n\n  const seriesOptions = {{{chart}}};\n\n  function createChart() {\n    Highcharts.setOptions({\n      lang: {\n        months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],\n        weekdays: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],\n        shortMonths: [\"Янв\", \"Фев\", \"Мар\", \"Апр\", \"Май\", \"Июн\", \"Июл\", \"Авг\", \"Сен\", \"Окт\", \"Ноя\", \"Дек\"]\n      },\n      global: {\n        timezoneOffset: -3 * 60\n      },\n      colors: ['#058DC7', '#32B561', '#FF7F0E', '#C5B0D5', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']\n    });\n    Highcharts.chart('container', {\n      chart: {\n        animation: false,\n        type: 'spline'\n      },\n      title: {\n        text: 'Отчёт отклонений \\n {{equ}}'\n      },\n      credits: {\n        enabled: false\n      },\n      subtitle: {\n        text: 'серийный номер: {{sn}}'\n      },\n      xAxis: {\n        type: 'datetime',\n        tickWidth: 1,\n        gridLineWidth: 1,\n        dateTimeLabelFormats: { // don't display the dummy year\n          month: '%e. %b',\n          year: '%b'\n        },\n        title: {\n          text: 'время'\n        }\n      },\n      yAxis: [{ // левая ось\\\n        gridLineWidth: 0,\n        max:1,\n        title: {\n          text: null\n        },\n        labels: {\n          enabled:false,\n          // align: 'left',\n          // x: 3,\n          // y: 16,\n           //format: '{value:.,0f}'\n        },\n        showFirstLabel: false,\n        opposite: true\n      }, { // правая ось\n        //linkedTo: 0,\n        //tickAmount:7,\n        tickPixelInterval:25,\n        //minorTickInterval:2,\n        gridLineWidth: 1,\n        title: {\n          text: null\n        },\n        labels: {\n          align: 'right',\n          x: 0,\n          y: 3,\n          format: '{value:.,0f}'\n        },\n        showFirstLabel: false,\n      }],\n      tooltip: {\n        crosshairs: false\n      },\n      plotOptions: {\n        series: {\n          animation: false\n        },\n        spline: {\n          marker: {\n            enabled: false\n          }\n        },\n        area: {\n          lineWidth: 1,\n          marker: {\n            enabled: false\n          },\n          status : {\n            hover: {\n               lineWidth: 1\n            }\n          },\n          color: '#999999',\n          fillOpacity: 0.1\n        }\n      },\n      series: seriesOptions\n    });\n  };\n  createChart();\n  </script>\n  <div id=\"values\">\n    <table class=\"table table-sm\">\n      <thead>\n        <tr> {{#payload.headers}}\n          <th class=\"text-center\">{{.}}</th> {{/payload.headers}} </tr>\n      </thead>\n      <tbody> {{#payload.values}}\n        <tr>\n          <td class=\"text-center\">{{num}}</td>\n          <td class=\"text-center\">{{time}}</td>\n          <td class=\"text-center\">{{param}}</td>\n          <td class=\"text-center\">{{value}}</td>\n          <td class=\"text-center\">{{level}}</td>\n        </tr> {{/payload.values}} {{^payload.values}}\n        <tr>\n          <td class=\"text-center\" colspan=\"5\">отклонений не зафиксировано</td>\n        </tr> {{/payload.values}}</tbody>\n    </table>\n  </div>\n  <div id=\"pageFooter\">\n  </div>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 560,
+        "y": 200,
+        "wires": [
+            [
+                "adbe08a6.8be7b8",
+                "1147ed7e.df0713"
+            ]
+        ]
+    },
+    {
+        "id": "b160f6d0.7c3c68",
+        "type": "file",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 850,
+        "y": 200,
+        "wires": [
+            [
+                "766955b9.aaaefc"
+            ]
+        ]
+    },
+    {
+        "id": "4b4054fc.b98a0c",
+        "type": "catch",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "scope": null,
+        "x": 320,
+        "y": 40,
+        "wires": [
+            [
+                "3719fae9.b246e6"
+            ]
+        ]
+    },
+    {
+        "id": "3719fae9.b246e6",
+        "type": "debug",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 490,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "96b996a1.107218",
+        "type": "mqtt in",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "topic": "rep/generate",
+        "qos": "0",
+        "broker": "5c5ad785.da16c8",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "d1d43103.45eb5"
+            ]
+        ]
+    },
+    {
+        "id": "31bbb085.8ecbd",
+        "type": "mqtt out",
+        "z": "e5309594.d40e48",
+        "name": "",
+        "topic": "rep/generate",
+        "qos": "0",
+        "retain": "false",
+        "broker": "5c5ad785.da16c8",
+        "x": 1110,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9d6636ba.c8da58",
+        "type": "debug",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 330,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d1d43103.45eb5",
+        "type": "json",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "29947f99.47237",
+                "9d6636ba.c8da58"
+            ]
+        ]
+    },
+    {
+        "id": "1147ed7e.df0713",
+        "type": "function",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "func": "msg.filename = msg.htmlfilename;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 710,
+        "y": 200,
+        "wires": [
+            [
+                "b160f6d0.7c3c68"
+            ]
+        ]
+    },
+    {
+        "id": "766955b9.aaaefc",
+        "type": "debug",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 1010,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d6c0a613.eaf688",
+        "type": "debug",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 550,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "44cb2a3d.67e484",
+        "type": "status",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "scope": [
+            "598cc5f3.6add4c"
+        ],
+        "x": 200,
+        "y": 560,
+        "wires": [
+            [
+                "16efe408.962d4c"
+            ]
+        ]
+    },
+    {
+        "id": "16efe408.962d4c",
+        "type": "debug",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 380,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2914039d.f58c4c",
+        "type": "debug",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 710,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "5790dd00.2ce744",
+        "type": "function",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "func": "msg.payload.chatId = 206314215;\nmsg.payload.content = 'C:\\\\Users\\\\Sin\\\\nr\\\\' + msg.filename;\nmsg.payload.type = 'document';\nmsg.payload.caption = msg.reportId.toString();\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [
+                "3186d19c.2e68be",
+                "dc0eb0b0.75546"
+            ]
+        ]
+    },
+    {
+        "id": "3186d19c.2e68be",
+        "type": "delay",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 540,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3101314.a682b",
+        "type": "delay",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 740,
+        "y": 240,
+        "wires": [
+            [
+                "5790dd00.2ce744"
+            ]
+        ]
+    },
+    {
+        "id": "f8f34e18.5010f",
+        "type": "inject",
+        "z": "33052606.1cec9a",
+        "name": "112233",
+        "topic": "",
+        "payload": "{\"reportId\":2538312138126,\"deviceId\":112233,\"info\":{\"equ\":\"Liebhher LD4010\",\"lab\":\"ЛГТ\",\"loc\":\"401\",\"subcode\":5678},\"details\":[{\"level\":\"info\",\"t1\":8.74,\"dur\":60156}],\"topic\":\"spb/334455/status\",\"rules\":{\"t1\":{\"info\":{\"min\":2,\"max\":8,\"dur\":1},\"warn\":{\"min\":0,\"max\":10,\"dur\":1}}}}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 70,
+        "y": 360,
+        "wires": [
+            [
+                "29947f99.47237"
+            ]
+        ]
+    },
+    {
+        "id": "dc0eb0b0.75546",
+        "type": "debug",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 730,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "8818c6b9.80adb8",
+        "type": "function",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "func": "var statusMessage = 'Отключилось устройство: \\r\\n';\nstatusMessage += '*' + msg.payload.id + '*'  + '\\r\\n';\nmsg.payload = {chatId : 206314215, type : 'message', content : statusMessage};\nmsg.payload.options = {disable_web_page_preview : true, parse_mode : \"Markdown\"};\nmsg.report = '1234567890';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 210,
+        "y": 480,
+        "wires": [
+            [
+                "3186d19c.2e68be"
+            ]
+        ]
+    },
+    {
+        "id": "c9fb94fe.ae22a8",
+        "type": "inject",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "topic": "",
+        "payload": "{\"id\":900111,\"t1\":23.4}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "8818c6b9.80adb8"
+            ]
+        ]
+    },
+    {
+        "id": "7de15356.ae1cfc",
+        "type": "inject",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "topic": "",
+        "payload": "{\"reportId\":3538312138126,\"deviceId\":334455,\"info\":{\"equ\":\"Liebhher LD4010\",\"lab\":\"ЛГТ\",\"loc\":\"401\",\"subcode\":5678},\"details\":[{\"level\":\"info\",\"t1\":8.74,\"dur\":60156}],\"topic\":\"spb/334455/status\",\"rules\":{\"t1\":{\"info\":{\"min\":2,\"max\":8,\"dur\":1},\"warn\":{\"min\":0,\"max\":10,\"dur\":1}}}}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 70,
+        "y": 400,
+        "wires": [
+            [
+                "29947f99.47237"
+            ]
+        ]
+    },
+    {
+        "id": "44451b4.307bde4",
+        "type": "inject",
+        "z": "33052606.1cec9a",
+        "name": "",
+        "topic": "",
+        "payload": "{\"reportId\":6538312138126,\"deviceId\":667788,\"info\":{\"equ\":\"Liebhher LD4010\",\"lab\":\"ЛГТ\",\"loc\":\"401\",\"subcode\":5678},\"details\":[{\"level\":\"info\",\"t1\":8.74,\"dur\":60156}],\"topic\":\"spb/334455/status\",\"rules\":{\"t1\":{\"info\":{\"min\":-23,\"max\":-18,\"dur\":1},\"warn\":{\"min\":-25,\"max\":-17,\"dur\":1}}}}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 70,
+        "y": 320,
+        "wires": [
+            [
+                "29947f99.47237"
+            ]
+        ]
+    },
+    {
+        "id": "fb767463.6b1e58",
+        "type": "function",
+        "z": "e5309594.d40e48",
+        "name": "rules",
+        "func": "const timestamp = Date.now();\nconst oldStatus = context.get(msg.topic, 'memory') || false;\n//if(!oldStatus) console.log(`${msg.topic} / ${oldStatus}`);\nconst ruleCheck = ({ min, max }, value) => parseFloat(min) > parseFloat(value) || parseFloat(max) < parseFloat(value);\nconst setNow = (value, level, timestamp, duration) => ({ value, level, timestamp, duration });\nconst details = (param, value, level, dur) => ({ level, [param]:value, dur });\nconst duration = old => Date.now() - old;\nconst { payload, rules, info } = msg;\nconst { id } = payload;\nconst newStatus = {};\nconst log = {};\nlet report = [];\nlet gen = {};\n\ntry {\n  if (rules && rules !== 'null') {\n    for (let key in rules) { //Object.keys(rules).forEach\n      let now = {};\n      const old = oldStatus ? oldStatus[key] : false;\n      //console.log(old);\n      const value = payload[key];\n      const { warn, info } = rules[key];\n\n      if (ruleCheck(warn, value)) {\n        if (old && old.level === 'warn') {\n          const dur = timestamp - old.timestamp;\n            if (dur >= (warn.dur * 60 * 1000)) {\n              report.push(details(key, value, 'warn', dur));\n              now = setNow(value, 'warn', timestamp, 0);\n            } else {\n          \t  now = setNow(value, 'warn', old.timestamp, dur);\n            }\n        } else {\n          now = setNow(value, 'warn', timestamp, 0);\n        }\n      } else if (ruleCheck(info, value)) {\n        if (old && old.level === 'info') {\n          const dur = timestamp - old.timestamp;\n            if (dur >= (info.dur * 60 * 1000)) {\n              report.push(details(key, value, 'info', dur));\n              now = setNow(value, 'info', timestamp, 0);\n            } else {\n              now = setNow(value, 'info', old.timestamp, dur);\n            }\n        } else {\n          now = setNow(value, 'info', timestamp, 0);\n        }\n      } else {\n        now.value = value;\n        now.level = 'good';\n      }\n      newStatus[key] = now;\n    }\n  } else {\n    //node.error('No rule');\n    return [null, null, null, null];\n  }\n} catch (err) {\n  node.error(err, msg);\n  msg.error = err;\n}\n\ncontext.set(msg.topic, newStatus, 'memory');\n\nconst statusOutput = {};\nstatusOutput.topic = msg.topic;\nstatusOutput.payload = newStatus;\n\nmsg.payload = Object.assign({}, payload, info);\n//msg.payload.info = info;\n//msg.payload.original = values;\n//msg.status = newStatus;\n\n//msg.statafter = status;\n\nif (report.length !== 0) {\n  gen.payload = {\n      reportId: Date.now(),\n      deviceId: id,\n      info: info,\n      details: report,\n      topic: msg.topic,\n      rules: rules\n  };\n  gen.topic = msg.topic;\n} else {\n  gen = null;\n}\n\nlet count = flow.get('count', 'memory') || {};\nif (!count.sent) count.sent = 0;\ncount.sent += 1;\nflow.set('count', count, 'memory');\nconst ts = flow.get('tstart', 'memory');\nnode.status({ fill: \"green\", shape: \"dot\", text: `${count.sent} : ${(Date.now() - ts)}` });\nlog.payload = `${new Date().toLocaleString()} : ${msg.topic} : rules : ${(Date.now() - ts)} ms`;\ndelete msg.values;\ndelete msg.rules;\ndelete msg.info;\nreturn [msg, statusOutput, gen, log];",
+        "outputs": 4,
+        "noerr": 0,
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a8639c7a.dc62d",
+        "type": "function",
+        "z": "7ab18f20.143b9",
+        "name": "",
+        "func": "let subs = msg.payload.subcodes.map((codes) => {\n    delete msg.payload.subcodes;\n    return {\n        topic:msg.topic,\n        payload: Object.assign({code: codes}, msg.payload)\n    };\n});\nmsg = subs;\nreturn [ msg ];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 200,
+        "wires": [
+            [
+                "64fcd79a.0ba888"
+            ]
+        ]
+    },
+    {
+        "id": "9d49d2e1.86c62",
+        "type": "inject",
+        "z": "7ab18f20.143b9",
+        "name": "",
+        "topic": "spb/123456/status",
+        "payload": "{\"id\":123456,\"ts\":12345678,\"subcodes\":[1234,5678,9876,5432]}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "a8639c7a.dc62d"
+            ]
+        ]
+    },
+    {
+        "id": "64fcd79a.0ba888",
+        "type": "debug",
+        "z": "7ab18f20.143b9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 490,
+        "y": 200,
+        "wires": []
+    }
+]
